@@ -1,53 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="3" total="5" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T02:23:27 EET" name="Default suite" finished-at="2024-02-21T02:24:20 EET" duration-ms="53810">
+  <suite started-at="2024-02-26T14:20:04 EET" name="Default suite" finished-at="2024-02-26T14:20:20 EET" duration-ms="15396">
     <groups>
     </groups>
-    <test started-at="2024-02-21T02:23:27 EET" name="Default test" finished-at="2024-02-21T02:24:20 EET" duration-ms="53810">
+    <test started-at="2024-02-26T14:20:04 EET" name="Default test" finished-at="2024-02-26T14:20:20 EET" duration-ms="15396">
       <class name="My_Test.Magento">
-        <test-method is-config="true" signature="MySetup()[pri:0, instance:My_Test.Magento@1d131e1b]" started-at="2024-02-21T02:23:27 EET" name="MySetup" finished-at="2024-02-21T02:23:40 EET" duration-ms="13643" status="PASS">
+        <test-method is-config="true" signature="MySetup()[pri:0, instance:My_Test.Magento@71cf1b07]" started-at="2024-02-26T14:20:04 EET" name="MySetup" finished-at="2024-02-26T14:20:07 EET" duration-ms="3332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MySetup -->
-        <test-method signature="SignUP()[pri:1, instance:My_Test.Magento@1d131e1b]" started-at="2024-02-21T02:23:40 EET" name="SignUP" finished-at="2024-02-21T02:23:52 EET" duration-ms="12040" status="PASS">
+        <test-method signature="SignInMyUser()[pri:1, instance:My_Test.Magento@71cf1b07]" started-at="2024-02-26T14:20:08 EET" name="SignInMyUser" finished-at="2024-02-26T14:20:13 EET" duration-ms="5755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUP -->
-        <test-method signature="logOut()[pri:2, instance:My_Test.Magento@1d131e1b]" started-at="2024-02-21T02:23:52 EET" name="logOut" finished-at="2024-02-21T02:23:57 EET" duration-ms="4945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method signature="SignIn()[pri:3, instance:My_Test.Magento@1d131e1b]" started-at="2024-02-21T02:23:57 EET" name="SignIn" finished-at="2024-02-21T02:24:03 EET" duration-ms="6128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignIn -->
-        <test-method signature="AddOddBags()[pri:4, instance:My_Test.Magento@1d131e1b]" started-at="2024-02-21T02:24:03 EET" name="AddOddBags" finished-at="2024-02-21T02:24:20 EET" duration-ms="16943" status="FAIL">
+        </test-method> <!-- SignInMyUser -->
+        <test-method signature="AddEvevBags()[pri:4, instance:My_Test.Magento@71cf1b07]" started-at="2024-02-26T14:20:13 EET" name="AddEvevBags" finished-at="2024-02-26T14:20:19 EET" duration-ms="6218" status="FAIL">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=121.0.6167.185)
+  (Session info: chrome=121.0.6167.189)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2eb171070ec34c0d032de72b43f11d9c, clickElement {id=A93E3A266EB2AD47C7435A570BEA2FDA_element_304}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58570/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2eb171070ec34c0d032de72b43f11d9c)] -> css selector: .item.product.product-item]
-Session ID: 2eb171070ec34c0d032de72b43f11d9c]]>
+Command: [d03f045b9748e435ac304900805bf442, findChildElement {value=product-image-photo, id=771CCBE3213D521DCD3ACBE73D2807E8_element_232, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57300}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57300/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d03f045b9748e435ac304900805bf442]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=121.0.6167.185)
+  (Session info: chrome=121.0.6167.189)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2eb171070ec34c0d032de72b43f11d9c, clickElement {id=A93E3A266EB2AD47C7435A570BEA2FDA_element_304}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58570/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2eb171070ec34c0d032de72b43f11d9c)] -> css selector: .item.product.product-item]
-Session ID: 2eb171070ec34c0d032de72b43f11d9c
+Command: [d03f045b9748e435ac304900805bf442, findChildElement {value=product-image-photo, id=771CCBE3213D521DCD3ACBE73D2807E8_element_232, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57300}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57300/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d03f045b9748e435ac304900805bf442
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,9 +50,11 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at My_Test.Magento.AddOddBags(Magento.java:75)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at My_Test.Magento.AddEvevBags(Magento.java:88)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,7 +88,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddOddBags -->
+        </test-method> <!-- AddEvevBags -->
       </class> <!-- My_Test.Magento -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

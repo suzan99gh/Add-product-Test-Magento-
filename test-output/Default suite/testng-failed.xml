@@ -5,7 +5,7 @@
     <classes>
       <class name="My_Test.Magento">
         <methods>
-          <include name="AddOddBags"/>
+          <include name="AddEvevBags"/>
           <include name="MySetup"/>
         </methods>
       </class> <!-- My_Test.Magento -->
