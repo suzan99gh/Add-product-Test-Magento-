@@ -76,33 +76,67 @@ public class Magento extends Parameters {
 		assertEquals(WelcomeMessage.contains("Welcome"), true);
 	}
 
+//	@Test(priority = 4)
+//	private void AddEvevBags() throws InterruptedException {
+//
+//		driver.get("https://magento.softwaretestingboard.com/gear/bags.html");
+//		WebElement Products = driver.findElement(By.cssSelector(".column.main"));
+//		List<WebElement> items = Products.findElements(By.cssSelector(".item.product.product-item"));
+//
+//		for (int i = 0; i < items.size(); i += 2) {
+//			WebElement numberOfItem = items.get(i);
+//
+//			WebElement toClick = numberOfItem.findElement(By.className("product-image-photo"));
+//			toClick.click();
+//			Thread.sleep(4000);
+//
+//				WebElement addToCartButton = driver.findElement(By.cssSelector(".action.primary.tocart"));
+//				addToCartButton.click();
+//
+//			System.out.println(i);
+//		}
+//	}
+
 	@Test(priority = 4)
 	private void AddEvevBags() throws InterruptedException {
-		driver.get("https://magento.softwaretestingboard.com/gear/bags.html");
-		WebElement Products = driver.findElement(By.cssSelector(".column.main"));
-		List<WebElement> items = Products.findElements(By.cssSelector(".item.product.product-item"));
+	    driver.get("https://magento.softwaretestingboard.com/gear/bags.html");
+	    WebElement Products = driver.findElement(By.cssSelector(".column.main"));
+	    List<WebElement> items = Products.findElements(By.cssSelector(".item.product.product-item"));
 
-		for (int i = 0; i < items.size(); i += 2) {
-			WebElement numberOfItem = items.get(i);
+	    for (int i = 0; i < items.size(); i += 2) {
+	        WebElement numberOfItem = items.get(i);
+	        WebElement toClick = numberOfItem.findElement(By.className("product-image-photo"));
+	        toClick.click();
+	        Thread.sleep(4000);
 
-			WebElement toClick = numberOfItem.findElement(By.className("product-image-photo"));
-			toClick.click();
-			Thread.sleep(4000);
+	        // Re-locate the addToCartButton after the click to avoid stale element reference
+	        WebElement addToCartButton = driver.findElement(By.cssSelector(".action.primary.tocart"));
+	        addToCartButton.click();
 
-			try {
-				WebElement addToCartButton = driver.findElement(By.id("product-addtocart-button"));
-				addToCartButton.click();
-			} catch (StaleElementReferenceException e) {
-				// Re-locate the button element and click on it
-				Thread.sleep(2000); // Adding some delay to let the DOM refresh properly
-				WebElement addToCartButton = driver.findElement(By.id("product-addtocart-button"));
-				addToCartButton.click();
-			}
-			System.out.println(i);
-		}
+	        // Re-locate the Products element to update the list of items
+	        Products = driver.findElement(By.cssSelector(".column.main"));
+	        items = Products.findElements(By.cssSelector(".item.product.product-item"));
+
+	        System.out.println(i);
+	    }
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //	@Test(priority = 4)
 //	private void AddEvevBags() throws InterruptedException {
